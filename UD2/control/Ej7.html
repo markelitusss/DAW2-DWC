@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 7</title>
+</head>
+<body>
+    <script>
+        let pedido = prompt("Introduzca su pedido (carne, pescado o verdura):");
+        // para que sea case-insensitive
+        pedido.toLowerCase();
+
+        switch (pedido) {
+            case "carne":
+                alert("Bebida recomendada: Vino tinto");
+                break;
+            case "pescado":
+                alert("Bebida recomendada: Vino blanco");
+                break;
+            case "verdura":
+                alert("Bebida recomendada: Agua");
+                break;
+            default:
+                alert("Escriba carne, pescado o verdura");
+        }
+    </script>
+    <h2>Ejecución finalizada</h2>
+</body>
+</html>

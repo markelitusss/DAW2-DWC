@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 6</title>
+</head>
+<body>
+    <script>
+        let mes = parseInt(prompt("Introduce un número del 1 al 12:"));
+        let mesTexto = "";
+
+        switch (mes) {
+            case 1: 
+                mesTexto = "Enero";
+                break;
+            case 2: 
+                mesTexto = "Febrero";
+                break;
+            case 3: 
+                mesTexto = "Marzo";
+                break;
+            case 4: 
+                mesTexto = "Abril";
+                break;
+            case 5: 
+                mesTexto = "Mayo";
+                break;
+            case 6: 
+                mesTexto = "Junio";
+                break;
+            case 7: 
+                mesTexto = "Julio";
+                break;
+            case 8: 
+                mesTexto = "Agosto";
+                break;
+            case 9: 
+                mesTexto = "Septiembre";
+                break;
+            case 10: 
+                mesTexto = "Octubre";
+                break;
+            case 11: 
+                mesTexto = "Noviembre";
+                break;
+            case 12: 
+                mesTexto = "Diciembre";
+                break;
+            default:
+                mesTexto = "Ese número no está entre 1 y 12";
+        }
+
+        alert(mesTexto);
+    </script>
+    <h2>Ejecución finalizada</h2>
+</body>
+</html>
