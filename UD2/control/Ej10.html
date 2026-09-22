@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 10</title>
+</head>
+<body>
+    <script>
+        let num = parseInt(prompt("Introduce un número para calcular su factorial"));
+        let factoral = num;
+
+        // calcula el factorial utilizando un contador regresivo
+        for (let i = num - 1; i >= 1; i--) {
+            factoral *= i;
+        }
+
+        alert(num + "! = " + factoral);
+    </script>
+    <h2>Ejecución finalizada</h2>
+</body>
+</html>

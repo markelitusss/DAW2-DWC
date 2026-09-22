@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 14</title>
+</head>
+<body>
+    <script>
+        let numero = 13;
+        let respuesta = "";
+
+        do {
+            respuesta = parseInt(prompt("Introduce un número"));
+            if (respuesta == numero) {
+                alert("El numero introducido es correcto!");
+            }
+            // cuando se hace click en cancelar -> valor de respuesta es null
+            else if (!respuesta) {
+                alert("Juego cancelado");
+                respuesta = 13;
+            }
+            else {
+                if (respuesta > numero) {
+                    alert("El número oculto es menor que el número introducido. Vuelve a intentarlo");
+                }
+                else {
+                    alert("El número oculto es mayor que el número introducido. Vuelve a intentarlo");
+                }
+            }
+        }
+        while (respuesta != numero);
+    </script>
+    <h2>Ejecución finalizada</h2>
+</body>
+</html>

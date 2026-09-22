@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 13</title>
+</head>
+<body>
+    <script>
+        // definimos i antes del bucle
+        let patron = "";
+        let i = 1
+        let car = prompt("Introduce un caracter:");
+        let lineas = parseInt(prompt("Introduce la cantidad de lineas para imprimir:"));
+
+        // bucle exterior -> número de filas
+        // bucle interior -> columnas
+        // al ser do...while se ejecuta mínimo 1 vez
+        do {
+            // definimos j antes del bucle
+            // cada vez que el programa vuelva aquí el valor de j volverá a ser 1
+            let j = 1;
+
+            do {
+                patron += car;
+                j++;
+            }
+            while (j <= i);
+
+            patron += "\n";
+            i++;
+        }
+        while (i <= lineas);
+
+        console.log(patron);
+    </script>
+    <h2>Ejecución finalizada (consola)</h2>
+</body>
+</html>

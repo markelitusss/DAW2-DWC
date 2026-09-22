@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 9</title>
+</head>
+<body>
+    <script>
+        // i es el resultado de las potencias
+        // division es la variable que utilizamos para comprobar si i es potencia de 2 o no
+        for (let i = 5; i <= 300; i++) {
+            let division = i;
+
+            // divide entre 2 hasta que division sea 1 o menor que 1
+            while (division != 1 && division > 1) {
+                division /= 2;
+            }
+
+            // si es uno es potencia de 2
+            if (division == 1) {
+                console.log(i);
+            }
+        }
+    </script>
+    <h2>Ejecución finalizada (consola)</h2>
+</body>
+</html>

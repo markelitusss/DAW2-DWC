@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 12</title>
+</head>
+<body>
+    <script>
+        // definimos i antes del bucle
+        let patron = "";
+        let i = 1
+        let car = prompt("Introduce un caracter:");
+
+        // bucle exterior -> número de filas
+        // bucle interior -> columnas
+        while (i <= 13) {
+            // definimos j antes del bucle
+            // cada vez que el programa vuelva aquí el valor de j volverá a ser 1
+            let j = 1;
+
+            while (j <= i) {
+                patron += car;
+                j++;
+            }
+
+            patron += "\n";
+            i++;
+        }
+
+        console.log(patron);
+    </script>
+    <h2>Ejecución finalizada (consola)</h2>
+</body>
+</html>
