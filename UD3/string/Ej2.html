@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+</head>
+<body>
+    <script>
+        const str = "String de prueba";
+
+        // 1. charAt()
+        // Devuelve el caracter de la posición especificada
+        console.log(str.charAt(3));
+
+        // 2. concat()
+        // Devuelve la unión de dos o más cadenas
+        console.log(str.concat(" de JS"));
+
+        // 3. includes()
+        // Devuelve si la cadena contiene la scuencia especificada o no
+        console.log(str.includes("String"));
+
+        // 4. indexOf()
+        // Devuelve la posición de la primera ocurrencia del valor especificado
+        console.log(str.indexOf("e"));
+
+        // 5. replace()
+        // Busca una secuencia y la reemplaza por otra
+        console.log(str.replace("de prueba", "test"))
+
+        // 6. search()
+        // Busca y devuelve la posición de una secuencia o expresión regular
+        console.log(str.search("ing"));
+
+        // 7. repeat()
+        // Devuelve un string con un número de copias de otro string
+        console.log(str.repeat(3));
+
+        // 8. substring()
+        // Extrae los caracteres indicados de un string y los devuelve
+        console.log(str.substring(10));
+
+        // 9. toUpperCase() / toLowerCase()
+        // Devuelve la cadena en mayúsculas / minúsculas
+        console.log(str.toUpperCase());
+
+        // 10. trim()
+        // Devuelve la cadena sin espacios sobrantes
+        const strEspacios = "   String con espacios ";
+        console.log(strEspacios.trim());
+    </script>
+</body>
+</html>
