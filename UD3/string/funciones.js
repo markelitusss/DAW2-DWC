@@ -55,6 +55,7 @@ function actividad4(codigo) {
 
 // Actividad 5
 function actividad5(str1, str2) {
+    // se transforman ambas cadenas a las mismas condiciones
     str1 = str1.trim();
     str1 = str1.toLowerCase();
     str2 = str2.trim();
@@ -62,16 +63,31 @@ function actividad5(str1, str2) {
 
     result = "";
 
+    // bucle de la función
     for (car of str1) {
+        // si el caracter de una cadena está en la otra
+        // añadimos el caracter a result
         if (str2.match(car)) {
             result += car;
-            str1 = str1.replaceAll(car, '');
+            
+            // reemplazamos todas las ocurrencias de ese caracter por un espacio vacío
+            // para evitar repeticiones
+            str2 = str2.replaceAll(car, '');
         } 
     }
 
     return result;
 }
 
+// Actividad 6
+function actividad6(str) {
+    // de nuevo expresiones regulares :(
+    // buscamos uno o mas caracteres de espacio (/ +) que precedan a otro espacio (?= )
+    // por todo el string (/g) para reemplazarlos por vacío ("")
+    return str.replace(/ +(?= )/g, "").trim();
+}
+
 console.log(actividad3("te estas pasando juanan"));
 console.log(actividad4("CP-12-3"));
-console.log(actividad5("Ciudad", "Cuando"))
+console.log(actividad5("Ciudad", "Cuando"));
+console.log(actividad6("JavaScript   es    muy   fácil"));
