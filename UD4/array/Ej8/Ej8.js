@@ -1,6 +1,6 @@
 // Ejercicio 8 Arrays
 
-const str = "Jose:García Canales:653101799:example@gmail.com:03181";
+const str = "Alberto:García Canales:653101799:example@gmail.com:03181";
 const arr = str.split(":");
 
 const arrEmail = arr[3].split("@");
