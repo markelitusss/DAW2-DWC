@@ -8,8 +8,8 @@ const ciudades = [
     {nombre: 'Callosa', poblacion: 1526006}
 ];
 
-input = parseInt(prompt("Introduce un número"));
-output = "";
+const input = parseInt(prompt("Introduce un número"));
+let output = "";
 
 ciudades.forEach(ciudad => {
     if (ciudad.poblacion > input) return output += ciudad.nombre + "\n";

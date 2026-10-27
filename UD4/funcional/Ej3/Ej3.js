@@ -11,8 +11,8 @@ const personas = [
     {name: "Ayoze", age: 18}
 ];
 
-input = parseInt(prompt("Introduce una edad"));
-output = "";
+const input = parseInt(prompt("Introduce una edad"));
+let output = "";
 
 const persona = personas.find(p => p.age === input);
 
