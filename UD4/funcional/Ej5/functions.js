@@ -15,7 +15,7 @@ function addItems(notas, item) {
 
 function clearItems(notas) {
     let notasLimpio = notas.map(i => parseFloat(i));
-    notasLimpio = notasLimpio.filter(i => !(isNaN(i)));
+    notasLimpio = notasLimpio.filter(i => !(isNaN(i) || i > 10 || i < 0));
     return notasLimpio;
 }
 
@@ -28,12 +28,12 @@ function aprobados(notas) {
 }
 
 function notaMedia(notas) {
-    return notas.reduce((sum, nota) => sum += nota) / notas.length;
+    return (notas.reduce((sum, nota) => sum += nota) / notas.length).toFixed(2);
 }
 
 function cambiaNotas(notas, incremento) {
-    return notas.forEach(nota => {
+    return notas.map(nota => {
         nota *= 1 + incremento / 100;
-        nota.toFixed(2);
+        return nota.toFixed(2);
     });
 }
